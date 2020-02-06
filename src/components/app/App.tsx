@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../images/logo.svg';
 import './App.css';
+import Game from '../game/Game';
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
           Learn React
         </a>
       </header>
+      <div>
+        <Game />
+      </div>
     </div>
   );
 }
