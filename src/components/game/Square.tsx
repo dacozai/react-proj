@@ -1,21 +1,17 @@
 import React from 'react';
+import './Square.css';
 
 interface MyProps {
   value: string,
-  onClick: Function;
+  onClick: () => void;
 }
 
-class Square extends React.Component<MyProps> {
-  render() {
-    return (
-      <button
-        className="square"
-        onClick={() => this.props.onClick()}
-      >
-        {this.props.value}
-      </button>
-    );
-  }
+function Square(props: MyProps) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 }
 
 
